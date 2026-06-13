@@ -219,7 +219,8 @@ body[data-theme="light"] .site-header {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #ffffff
+    color: #ffffff;
+    /* Оставлено как было */
 }
 
 .logo span {
@@ -908,20 +909,162 @@ body[data-theme="light"] .calendar-table tbody tr:hover {
 }
 
 
-/* === RESPONSIVE === */
+/* =============================================
+   АДАПТИВНОСТЬ ДЛЯ ТЕЛЕФОНОВ (НЕ ТРОГАЕМ ПК)
+   ============================================= */
 
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 3.5rem;
-    }
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .contact-grid {
-        grid-template-columns: 1fr;
+    /* Общие отступы */
+    .section-padding {
+        padding: 60px 0;
     }
     .section-title {
         font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .section-title::after {
+        width: 60px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    /* Кнопки */
+    .btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+    /* Hero */
+    .hero {
+        height: 100vh;
+        min-height: 500px;
+    }
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    .hero-stats-container {
+        padding: 20px 0;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+    .stat-item p {
+        font-size: 0.9rem;
+    }
+    /* Сетки карточек */
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .pilots-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+    .partners-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 15px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    /* Карточки */
+    .glass-card {
+        padding: 20px;
+    }
+    .news-card-img {
+        height: 180px;
+    }
+    .news-card h3 {
+        font-size: 1.3rem;
+    }
+    /* Таблицы — горизонтальная прокрутка */
+    .calendar-table,
+    .results-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .calendar-table th,
+    .calendar-table td,
+    .results-table th,
+    .results-table td {
+        white-space: nowrap;
+        padding: 10px 12px;
+    }
+    /* Фильтры */
+    .filters-bar {
+        gap: 8px;
+    }
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+    /* Футер */
+    .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .pilots-grid {
+        grid-template-columns: 1fr;
+    }
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .pilot-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+    .glass-card {
+        padding: 15px;
+    }
+    .filter-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
 }
 
