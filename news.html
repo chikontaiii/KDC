@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости | Kyrgyz Drift Cup</title>
+    <link rel="icon" type="image/jpg" href="photo/KDC.JPG">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="news">
+
+    <section class="section-padding" style="padding-top:120px;">
+        <div class="container">
+            <h1 class="section-title">Новости</h1>
+            <div class="filters-bar reveal">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="drift">Дрифт</button>
+                <button class="filter-btn" data-filter="gymkhana">Джимхана</button>
+                <button class="filter-btn" data-filter="results">Результаты</button>
+                <button class="filter-btn" data-filter="announcement">Анонсы</button>
+            </div>
+            <div class="news-grid">
+                <!-- Новости с data-tags -->
+                <div class="glass-card news-card reveal" data-tags="drift results">
+                    <div class="news-card-img"><img src="photo/gansi.jpg" alt=""></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">Дрифт</span>
+                        <span class="news-date">7 июня 2026</span>
+                        <h3>Итоги первого этапа Havoline Drift Series 2026</h3>
+                        <p class="news-excerpt">27 пилотов из трёх стран открыли сезон на автодроме «Ганси». Подробный отчёт, фото и видео внутри.</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="glass-card news-card reveal" data-tags="gymkhana results">
+                    <div class="news-card-img"><img src="photo/slv15.jpg" alt=""></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">Джимхана</span>
+                        <span class="news-date">19 апреля 2026</span>
+                        <h3>Первый этап Havoline Gymkhana Series — итоги</h3>
+                        <p class="news-excerpt">В Бишкеке успешно прошёл дебютный этап новой джимханной серии. Результаты и победители.</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="glass-card news-card reveal" data-tags="announcement">
+                    <div class="news-card-img"><img src="photo/mark90.jpg" alt=""></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">Анонс</span>
+                        <span class="news-date">1 мая 2026</span>
+                        <h3>Календарь сезона 2026 опубликован</h3>
+                        <p class="news-excerpt">Полный список этапов KDC 2026 с датами и форматами. Планируйте свой гоночный сезон вместе с нами.</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="glass-card news-card reveal" data-tags="drift announcement">
+                    <div class="news-card-img"><img src="photo/bmw46.jpg" alt=""></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">Анонс</span>
+                        <span class="news-date">25 мая 2026</span>
+                        <h3>Регистрация на второй этап открыта</h3>
+                        <p class="news-excerpt">Пилоты могут подать заявку на участие во втором этапе Havoline Drift Series до 1 августа.</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="glass-card news-card reveal" data-tags="drift results">
+                    <div class="news-card-img"><img src="photo/tezik.jpg" alt=""></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">Дрифт</span>
+                        <span class="news-date">10 июня 2026</span>
+                        <h3>Обзор квалификации этапа 1: лучшие моменты</h3>
+                        <p class="news-excerpt">Видеонарезка самых ярких квалификационных заездов первого этапа сезона.</p>
+                        <a href="#" class="btn btn-secondary">Смотреть</a>
+                    </div>
+                </div>
+                <div class="glass-card news-card reveal" data-tags="gymkhana">
+                    <div class="news-card-img"><img src="photo/altezza.jpg" alt=""></div>
+                    <div class="news-card-body">
+                        <span class="news-tag">Джимхана</span>
+                        <span class="news-date">5 апреля 2026</span>
+                        <h3>Что такое джимхана и почему она в KDC?</h3>
+                        <p class="news-excerpt">Рассказываем о новом формате соревнований и его правилах в рамках чемпионата.</p>
+                        <a href="#" class="btn btn-secondary">Читать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
