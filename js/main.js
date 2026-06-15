@@ -30,7 +30,7 @@ function loadHeader() {
                 <li><a href="gallery.html" class="nav-link" data-page="gallery">Медиа(скоро...)</a></li>
                 <li><a href="about.html" class="nav-link" data-page="about">О серии(скоро...)</a></li>
                 <li><a href="partners.html" class="nav-link" data-page="partners">Партнёры(скоро...)</a></li>
-                <li><a href="contacts.html" class="nav-link" data-page="contacts">Контакты(скоро...)</a></li>
+                <li><a href="contacts.html" class="nav-link" data-page="contacts">Контакты</a></li>
             </ul>
         </div>
     </header>`;
